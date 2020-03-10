@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+	<title>My Page</title>
+	<script  src= "datos.js"></script>
+	<link rel="icon" href="img/logo.png">
+	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="resume.css" media="all" /> 
+	<!--espacio para poner el logo-->
+
+</head>
+<body bgcolor="White" text="Black">
+<center><h2>Formulario</h2> 
+<form>
+	<label for="texto">Nombre Completo: </label>
+	<input id="texto" type="text" placeholder="Entrada de Texto" value="" name="texto" required>
+	<br>
+	<br>
+	<label for="correo">Direccion de Correo: </label>
+	<input id="correo" type="email" placeholder="Entrada de Correo" value="" name="correo" required>
+	<br>
+	<br>
+	<label for="pass">Contraseña: </label>
+	<input id="pass" type="password" placeholder="Contraseña" value="" name="pass" required>
+	<br>
+	<br>
+	
+	<label for="edad">Edad: </label><input id="edad" type="number" placeholder="edad" value="1" min="1" max="99" name="edad">
+
+	<label for="edad">Estado: </label>
+	<select>
+		<option>Casado</option>
+		<option>Soltero</option>
+		<option>Divorciado</option>
+	</select>
+
+		<br>
+		<br>
+	<h4>Sexo</h4>
+	<input type="radio" id="Sexo" name="radio" checked><label for="blanco">Masculino</label>
+	<input type="radio" id="Sexo" name="radio"><label for="negro">Femenino</label>
+		<br>
+		<br>
+	<input type="button" value="Enviar Formulario" onclick="guardar_datos()">
+
+</form>
+</center>
+
+	
+</body>
+</html>
